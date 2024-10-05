@@ -7,7 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 export default function MobileHero() {
     return (
         <div className="relative">
-            <div style={{ position: 'relative', height: '70vh' }}>
+            <div style={{ position: 'relative', height: '85vh' }}>
                 <div className="absolute top-0 right-0 left-0 z-50 text-white">
                     <Header />
                 </div>
@@ -16,7 +16,7 @@ export default function MobileHero() {
                     src={`/images/adraina-1.jpeg`}
                     fill
                     quality={100}
-                    sizes="(min-width: 808px) 50vw, 100vw"
+                    // sizes="(min-width: 808px) 50vw, 100vw"
                     className="z-30 object-cover"
                 />
             </div>
