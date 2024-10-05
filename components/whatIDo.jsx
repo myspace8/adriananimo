@@ -1,54 +1,53 @@
-import * as React from "react"
+import * as React from "react";
+import { Card, CardContent } from "@/components/ui/card"; // Assuming you have these components set up correctly
 import Image from "next/image";
 
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-
 export default function WhatIDo() {
+  const cardsContent = [
+    {
+      title: "Assistant Program Manager, Youth Advocacy & Community Empowerment Program",
+      date: "Jun 2024 - present",
+      description:
+        "Coordinates civic leadership and community engagement projects for youth in Ghana, ensuring effective program delivery and strategic growth.",
+      image: "/images/photo_5947026960783886263_y.jpg", // Correct the image path as needed
+    },
+    {
+      title: "Peer Mentor, Royal Ace Tennis Club",
+      date: "Apr 2020 – Present",
+      description:
+        "Conducts training sessions and offers personalized coaching to improve players’ skills and match play strategies.",
+      image: "/images/tennis.jpg", // Correct the image path as needed
+    },
+    {
+      title: "Operations Manager, Bismuth Technologies",
+      date: "Oct 2019 – Dec 2020",
+      description:
+        "Design and ran technology and entrepreneurship programs for youth, partnering with schools and tech companies to enhance educational opportunities",
+      image: "/images/F_8kgOjbgAAKCDv.jpeg", // Correct the image path as needed
+    },
+  ];
+
   return (
-    <div className="flex flex-col justify-center items-center text-center p-4">
-      <h2 className="capitalize mb-1 font-semibold text-xl">What I have been doing so far</h2>
-      {/* <Carousel
-        opts={{
-          align: "start",
-        }}
-        className="w-full max-w-sm"
-      >
-        <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-              <div className="p-1">
-                <Card className="rounded-none">
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <div style={{ position: 'relative', height: '35vh' }}>
-                      <Image
-                        alt="A picture of Adriana in her office"
-                        src={`/images/adraina-1.jpeg`}
-                        fill
-                        quality={100}
-                        sizes="(min-width: 808px) 50vw, 100vw"
-                        className="z-50 object-cover"
-                      />
-                      <div className="absolute bottom-0 z-50">
-                        <p>June 2024 - Present</p>
-                        <h2>Assistant Program Manager, Youth Advocacy & Community Empowerment Program</h2>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+    <div className="flex flex-col justify-center items-center text-center px-4 py-6">
+      <h2 className="capitalize mb-4 font-semibold text-xl">
+        What I have been doing so far
+      </h2>
+
+      <div className="flex flex-col space-y-4 w-full">
+        {cardsContent.map((card, index) => (
+          <Card key={index} className="rounded-none">
+            <CardContent className="flex flex-col">
+              <Image src={card.image} width={300} height={300} className="w-full h-[25vh] object-cover" />
+              <div className="text-left mt-4 p-2">
+                <p className="my-1 text-black/70">{card.date}</p>
+                <h2 className="mb-1 font-semibold text-lg">{card.title}</h2>
+                <p>{card.description}</p>
               </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel> */}
+            </CardContent>
+          </Card>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
+
