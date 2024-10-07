@@ -34,7 +34,7 @@ export default function Insights() {
         Read my blog
       </h2>
 
-      <div className="flex flex-col gap-6 w-full">
+      <div className="flex flex-col gap-4 w-full">
         {cardsContent.map((card, index) => (
           <Card key={index} className="rounded-none border-none shadow-none">
             <CardContent className="flex justify-between items-start gap-4">

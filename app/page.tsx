@@ -4,6 +4,7 @@ import WhatIDo from "@/components/whatIDo";
 import MyWork from "@/components/myWork";
 import Insights from "@/components/insights";
 import RecentAwards from "@/components/awards";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
       </section>
       <section className="md:hidden bg-white mt-1">
         <RecentAwards />        
+      </section>
+      <section className="md:hidden bg-white mt-1">
+        <Contact />        
       </section>
     </>
   );
