@@ -31,12 +31,7 @@ export default function Home() {
       <section id="contact" className="md:hidden bg-white mt-1">
         <Contact />
       </section>
-      <section className="md:hidden bg-white mt-1">
-        <Footer />
-        <div className="flex justify-center text-sm text-black/95 p-2">
-          <p>© 2024 Adriana Nimo All Rights Reserved</p>
-        </div>
-      </section>
+      
     </>
   );
 }
