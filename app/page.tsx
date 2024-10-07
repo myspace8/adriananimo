@@ -3,6 +3,7 @@ import AboutMe from "@/components/about";
 import WhatIDo from "@/components/whatIDo";
 import MyWork from "@/components/myWork";
 import Insights from "@/components/insights";
+import RecentAwards from "@/components/awards";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
       </section>
       <section className="md:hidden bg-white mt-1">
         <Insights />        
+      </section>
+      <section className="md:hidden bg-white mt-1">
+        <RecentAwards />        
       </section>
     </>
   );
