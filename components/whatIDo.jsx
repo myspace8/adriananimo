@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card"; // Assuming you have these components set up correctly
+import Balancer from "react-wrap-balancer";
 import Image from "next/image";
 
 export default function WhatIDo() {
@@ -38,10 +39,10 @@ export default function WhatIDo() {
           <Card key={index} className="rounded-none">
             <CardContent className="flex flex-col">
               <Image src={card.image} width={300} height={300} className="w-full h-[25vh] object-cover" />
-              <div className="text-left mt-4 p-2">
-                <p className="my-1 text-black/70">{card.date}</p>
-                <h2 className="mb-1 font-semibold text-lg">{card.title}</h2>
-                <p>{card.description}</p>
+              <div className="text-left mt-2 p-4">
+                <p className="my-1 text-sm text-black/80">{card.date}</p>
+                <h2 className="mb-1 font-semibold text-lg"><Balancer>{card.title}</Balancer></h2>
+                <p className="text-sm">{card.description}</p>
               </div>
             </CardContent>
           </Card>
