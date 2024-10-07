@@ -5,6 +5,7 @@ import MyWork from "@/components/myWork";
 import Insights from "@/components/insights";
 import RecentAwards from "@/components/awards";
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -19,16 +20,22 @@ export default function Home() {
         <WhatIDo />
       </section>
       <section className="md:hidden bg-white mt-1">
-        <MyWork />        
+        <MyWork />
       </section>
       <section className="md:hidden bg-white mt-1">
-        <Insights />        
+        <Insights />
       </section>
       <section className="md:hidden bg-white mt-1">
-        <RecentAwards />        
+        <RecentAwards />
       </section>
       <section className="md:hidden bg-white mt-1">
-        <Contact />        
+        <Contact />
+      </section>
+      <section className="md:hidden bg-white mt-1">
+        <Footer />
+        <div className="flex justify-center text-sm text-black/95 p-2">
+          <p>© 2024 Adriana Nimo All Rights Reserved</p>
+        </div>
       </section>
     </>
   );
