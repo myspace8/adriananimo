@@ -16,19 +16,19 @@ export default function Home() {
       <section className="md:hidden bg-white mt-1">
         <AboutMe />
       </section>
-      <section className="md:hidden bg-white mt-1">
+      <section id="projects" className="md:hidden bg-white mt-1">
         <WhatIDo />
       </section>
-      <section className="md:hidden bg-white mt-1">
+      <section id="mywork" className="md:hidden bg-white mt-1">
         <MyWork />
       </section>
-      <section className="md:hidden bg-white">
+      <section id="blog" className="md:hidden bg-white">
         <Insights />
       </section>
-      <section className="md:hidden bg-white mt-1">
+      <section id="awards" className="md:hidden bg-white mt-1">
         <RecentAwards />
       </section>
-      <section className="md:hidden bg-white mt-1">
+      <section id="contact" className="md:hidden bg-white mt-1">
         <Contact />
       </section>
       <section className="md:hidden bg-white mt-1">
