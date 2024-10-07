@@ -29,19 +29,19 @@ export default function Insights() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center text-center px-4 py-6">
+    <div className="flex flex-col justify-center items-center bg-black text-white text-center px-4 py-6">
       <h2 className="capitalize mb-4 font-semibold text-xl">
         Read my blog
       </h2>
 
-      <div className="flex flex-col gap-4 w-full">
+      <div className="flex flex-col gap-6 w-full">
         {cardsContent.map((card, index) => (
-          <Card key={index} className="rounded-none border-none shadow-none">
+          <Card key={index} className="rounded-none border-none shadow-none bg-black text-white">
             <CardContent className="flex justify-between items-start gap-4">
               <div className="text-left flex flex-col gap-1">
                 <h2 className="mb-1 font-semibold text-lg"><Balancer>{card.title}</Balancer></h2>
                 <p className="text-sm">{card.description}</p>
-                <p className="text-xs mt-2 text-black/80">{card.date}</p>
+                <p className="text-xs mt-2 text-white/80">{card.date}</p>
               </div>
               <Image src={card.image} width={100} height={100} className="w-[24vw] h-full object-cover" />
             </CardContent>

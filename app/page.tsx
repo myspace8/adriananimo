@@ -22,7 +22,7 @@ export default function Home() {
       <section className="md:hidden bg-white mt-1">
         <MyWork />
       </section>
-      <section className="md:hidden bg-white mt-1">
+      <section className="md:hidden bg-white">
         <Insights />
       </section>
       <section className="md:hidden bg-white mt-1">
