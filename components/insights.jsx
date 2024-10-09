@@ -8,27 +8,26 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 export default function Insights() {
   const cardsContent = [
     {
-      title: "The Future of Social Entrepreneurship: Trends and Opportunities for Young Innovators",
+      title: "Duis vehicula lorem non justo consequat, at fringilla risus tempor",
       date: "Aug 2024",
       description:
-        "Discussing emerging trends in social entrepreneurship and how young leaders can capitalize on them",
-      image: "/images/photo_5947026960783886264_y.jpg", // Correct the image path as needed
+        "",
+      image: "https://www.womantowomanmentoring.org/wp-content/uploads/placeholder.jpg", // Correct the image path as needed
       href: "/article-1"
     },
     {
-      title: "Building a Sustainable Startup: Lessons from Leading Reecoplast",
+      title: "Phasellus fringilla nisi et orci euismod, vel egestas",
       date: "Sept 2024",
       description:
-        "Sharing experiences and challenges in founding and growing a green business focused on sustainability",
-      image: "/images/tennis.jpg", // Correct the image path as needed
+        "",
+      image: "https://www.womantowomanmentoring.org/wp-content/uploads/placeholder.jpg", // Correct the image path as needed
       href: "/article-2"
     },
     {
-      title: "Bridging the STEM gap in rural areas: Strategies for enhancing access to science and technology education",
-      date: "Sept 2024",
+      title: "Vivamus ultricies dui vel enim",
       description:
-        "Offering strategies to improve STEM education in undeserved communities",
-      image: "/images/F_8kgOjbgAAKCDv.jpeg", // Correct the image path as needed
+        "",
+      image: "https://www.womantowomanmentoring.org/wp-content/uploads/placeholder.jpg", // Correct the image path as needed
       href: "/article-3"
     },
   ];
@@ -52,7 +51,7 @@ export default function Insights() {
                   <IoIosArrowRoundForward className="text-lg" />
                 </Link>
               </div>
-              <Image src={card.image} width={100} height={100} className="w-[24vw] h-full object-cover" />
+              <Image src={card.image} width={100} alt={card.title} height={100} className="w-[24vw] h-full object-cover" />
             </CardContent>
           </Card>
         ))}

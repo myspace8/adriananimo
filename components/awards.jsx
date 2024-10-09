@@ -20,9 +20,9 @@ export default function RecentAwards() {
       <div className="flex flex-col space-y-4 w-full">
         <div className="relative">
           <div style={{ position: 'relative', height: '45vh' }}>
-            <div className="absolute flex flex-col gap-3 bottom-0 right-0 left-0 z-50 p-6 bg-gradient-to-t from-black via-black/65 to-black/0 text-white">
+            <div className="absolute flex flex-col gap-2 bottom-0 right-0 left-0 z-50 p-6 bg-gradient-to-t from-black via-black/65 to-black/0 text-white">
               <h2 className="text-xs uppercase text-center">Best Business Creation project of the Totalenergies Startupper of the Year</h2>
-              <p className="text-xl text-center">Winner</p>
+              <p className="text-2xl text-center">Winner</p>
               <p className="text-xs text-center">March 2022</p>
             </div>
             <Image
