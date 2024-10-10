@@ -63,12 +63,12 @@ export default function SheetMenu() {
                     >
                         Awards
                     </button>
-                    <button
+                    {/* <button
                         onClick={() => handleLinkClick("contact")}
                         className="text-left text-lg hover:text-primary transition-colors pb-2 border-b border-gray-200"
                     >
                         Contact
-                    </button>
+                    </button> */}
                 </nav>
             </SheetContent>
         </Sheet>
