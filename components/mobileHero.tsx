@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 export default function MobileHero() {
     return (
@@ -28,15 +29,21 @@ export default function MobileHero() {
                         <p className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Impact Driven Entrepreneur</p>
                     </div>
                     <div className="flex items-center gap-2 mt-4 z-50">
-                        <p className="border p-2 w-min">
-                            <FaPhoneAlt className="text-xl text-gray-400" />
-                        </p>
-                        <p className="border p-2 w-min">
-                            <MdEmail className="text-xl text-gray-400" />
-                        </p>
-                        <p className="border p-2 w-min">
-                            <FaLinkedin className="text-xl text-gray-400" />
-                        </p>
+                        <Link className="border p-2 w-min" href={"tel:+233240894565"}>
+                            <p>
+                                <FaPhoneAlt className="text-xl text-gray-400" />
+                            </p>
+                        </Link>
+                        <Link className="border p-2 w-min" href={"mailto:adrianaappiagyeinnimo@gmail.com"}>
+                            <p>
+                                <MdEmail className="text-xl text-gray-400" />
+                            </p>
+                        </Link>
+                        <Link className="border p-2 w-min" href={"https://www.linkedin.com/in/adriana-nimo-b70000104/"} target="_blank">
+                            <p>
+                                <FaLinkedin className="text-xl text-gray-400" />
+                            </p>
+                        </Link>
                     </div>
                 </div>
             </div>
