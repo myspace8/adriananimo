@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io";
+import Image from "next/image";
 
 export default function Article1() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -65,17 +66,13 @@ export default function Article1() {
 
         {/* Cover Image */}
         <div className="mb-8">
-          <img
-            src="https://www.womantowomanmentoring.org/wp-content/uploads/placeholder.jpg"
-            alt="Cover Image"
-            className="w-full h-64 object-cover rounded-md"
-          />
+          <Image src={"https://www.womantowomanmentoring.org/wp-content/uploads/placeholder.jpg"} className="w-full h-64 object-cover rounded-md" width={500} height={500} alt="placeholder image" />
         </div>
 
         {/* Article Content */}
         <article className="prose lg:prose-xl max-w-none">
           <p>
-          Social entrepreneurship has emerged as a powerful force for change. Unlike traditional business models that focus solely on profit, social entrepreneurship aims to address pressing societal challenges while generating revenue. Young leaders, with their fresh perspectives and adaptability, are uniquely positioned to leverage this growing movement. As the landscape of social entrepreneurship evolves, understanding the latest trends is key to making a meaningful impact.
+            Social entrepreneurship has emerged as a powerful force for change. Unlike traditional business models that focus solely on profit, social entrepreneurship aims to address pressing societal challenges while generating revenue. Young leaders, with their fresh perspectives and adaptability, are uniquely positioned to leverage this growing movement. As the landscape of social entrepreneurship evolves, understanding the latest trends is key to making a meaningful impact.
           </p>
         </article>
 

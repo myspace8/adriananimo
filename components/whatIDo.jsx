@@ -38,7 +38,7 @@ export default function WhatIDo() {
         {cardsContent.map((card, index) => (
           <Card key={index} className="rounded-none">
             <CardContent className="flex flex-col">
-              <Image src={card.image} width={300} height={300} className="w-full h-[25vh] object-cover" />
+              <Image src={card.image} width={300} height={300} alt={card.title} className="w-full h-[25vh] object-cover" />
               <div className="text-left mt-2 p-4">
                 <p className="my-1 text-sm text-black/80">{card.date}</p>
                 <h2 className="mb-1 font-semibold text-lg"><Balancer>{card.title}</Balancer></h2>

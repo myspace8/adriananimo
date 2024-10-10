@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io";
+import Image from "next/image";
 
 export default function Article3() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -65,11 +66,7 @@ export default function Article3() {
 
         {/* Cover Image */}
         <div className="mb-8">
-          <img
-            src="https://www.womantowomanmentoring.org/wp-content/uploads/placeholder.jpg"
-            alt="Cover Image"
-            className="w-full h-64 object-cover rounded-md"
-          />
+          <Image src={"https://www.womantowomanmentoring.org/wp-content/uploads/placeholder.jpg"} className="w-full h-64 object-cover rounded-md" width={500} height={500} alt="placeholder image"/>
         </div>
 
         {/* Article Content */}

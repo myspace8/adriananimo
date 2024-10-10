@@ -53,7 +53,7 @@ export default function AwardsCarousel() {
                                         src={slide.image}
                                         alt={`Slide ${index + 1}`}
                                         layout="fill"
-                                        objectFit="cover"
+                                        className="object-cover"
                                     />
                                     {index === 0 && (
                                         <div className="absolute bottom-0 right-0 left-0 flex flex-col items-center justify-center bg-gradient-to-t from-black via-black/65 to-black/0 text-white p-4">
