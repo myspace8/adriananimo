@@ -2,7 +2,9 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaPlay, FaPause } from "react-icons/fa";
-import { IoPlayOutline } from "react-icons/io5";
+import Link from "next/link";
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 
 export default function MyWork() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -15,9 +17,14 @@ export default function MyWork() {
             description: "Founded in June 2021, Reecoplast is on a mission to tackle the growing problem of plastic waste in Ghana. The company converts discarded plastics into eco-friendly products such as durable pavement blocks and pellets, which are used in various construction and manufacturing processes.",
         },
         {
-            src: "/images/depositphotos_130616940-stock-photo-paving-stone-worker.jpg",
+            src: "/images/plastic-palletes.jpeg",
+            title: "Reecoplast pallets",
+            description: "We produce high-quality pellets made from recycled plastic waste. These pellets can be used as raw materials in various industries such as, plastic manufacturing, packaging and more.",
+        },
+        {
+            src: "/images/pavement-bricks.jpeg",
             title: "Reecoplast pavement blocks",
-            description: "An innovative project using recycled plastic materials to manufacture high-quality construction blocks, reducing the need for traditional building materials while helping the environment.",
+            description: "Our pavement bricks are engineered using a unique blend of recycled platic waste and other additives to create a durable and waterproof solution for various construction projects.",
         },
     ];
 
@@ -27,7 +34,7 @@ export default function MyWork() {
         if (isPlaying) {
             const interval = setInterval(() => {
                 setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-            }, 8000); // Change image every 5 seconds
+            }, 5000);
 
             return () => clearInterval(interval); // Clean up on unmount
         }
@@ -62,7 +69,10 @@ export default function MyWork() {
                                 <h2 className="text- font-semibold uppercase text-center mb-2">
                                     {image.title}
                                 </h2>
-                                <p className="text-sm text-center">{image.description}</p>
+                                <p className="text-sm text-center mb-2">{image.description}</p>
+                                <Link href={""}>
+                                    <span className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500" href={"/"}>Learn more</span>
+                                </Link>
                             </div>
                         </div>
                     ))}
