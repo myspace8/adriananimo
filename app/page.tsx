@@ -4,8 +4,6 @@ import WhatIDo from "@/components/whatIDo";
 import MyWork from "@/components/myWork";
 import Insights from "@/components/insights";
 import RecentAwards from "@/components/awards";
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
 
 export default function Home() {
   return (

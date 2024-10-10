@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card"; // Assuming you have these components set up correctly
 import Balancer from "react-wrap-balancer";
-import Image from "next/image";
 
 export default function Contact() {
     const cardsContent = [

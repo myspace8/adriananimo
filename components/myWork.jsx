@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaPlay, FaPause } from "react-icons/fa";
 import Link from "next/link";
-import { IoIosArrowRoundForward } from "react-icons/io";
-
 
 export default function MyWork() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
