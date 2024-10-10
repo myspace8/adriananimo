@@ -18,7 +18,7 @@ export default function SheetMenu() {
         setTimeout(() => {
             const element = document.getElementById(id)
             if (element) {
-                element.scrollIntoView({ behavior: "instant" })
+                element.scrollIntoView({ behavior: "smooth" })
             }
         }, 100)
     }
