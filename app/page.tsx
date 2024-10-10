@@ -28,9 +28,9 @@ export default function Home() {
       <section id="awards" className="md:hidden bg-white mt-1">
         <RecentAwards />
       </section>
-      <section id="contact" className="md:hidden bg-white mt-1">
+      {/* <section id="contact" className="md:hidden bg-white mt-1">
         <Contact />
-      </section>
+      </section> */}
       
     </>
   );
