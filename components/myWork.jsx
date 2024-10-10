@@ -68,8 +68,8 @@ export default function MyWork() {
                                     {image.title}
                                 </h2>
                                 <p className="text-sm text-center mb-2">{image.description}</p>
-                                <Link href={""}>
-                                    <span className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500" href={"/"}>Learn more</span>
+                                <Link href={"https://reecoplastghana.vercel.app"} target="_blank">
+                                    <span className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Learn more</span>
                                 </Link>
                             </div>
                         </div>

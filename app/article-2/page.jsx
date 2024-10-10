@@ -29,7 +29,7 @@ export default function Article2() {
         <div className="max-w-3xl m-auto px-2 flex justify-between items-center">
           <div className="flex items-center gap-2 w-full">
             <IoIosArrowBack />
-            <Link href="/" className="text-lg italic font-semi-bold">
+            <Link href={"/"} scroll={false} className="text-lg italic font-semi-bold">
               Back
             </Link>
           </div>

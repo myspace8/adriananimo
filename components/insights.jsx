@@ -48,7 +48,6 @@ export default function Insights() {
                 <p className="text-sm">{card.description}</p>
                 <Link href={card.href} className="mt-2 flex items-center w-max gap-1">
                   <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500" href={"/"}>Read more</p>
-                  <IoIosArrowRoundForward className="text-lg" />
                 </Link>
               </div>
               <Image src={card.image} width={100} alt={card.title} height={100} className="w-[24vw] h-full object-cover" />
